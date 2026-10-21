@@ -1,0 +1,30 @@
+# --- secrets & runtime -------------------------------------------------------
+.env
+.env.*
+!.env.example
+storage/installed.lock
+storage/logs/*
+!storage/logs/.gitkeep
+storage/cache/*
+!storage/cache/.gitkeep
+storage/tmp/*
+!storage/tmp/.gitkeep
+storage/otp/*
+!storage/otp/.gitkeep
+storage/*.sqlite
+
+# --- vendor / editor --------------------------------------------------------
+vendor/
+node_modules/
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- test artifacts ---------------------------------------------------------
+/tmp/
+tests/__pycache__/
+*.pyc
+/tests/screenshots/

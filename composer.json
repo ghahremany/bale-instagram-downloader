@@ -1,0 +1,32 @@
+{
+  "name": "bale/bale-instagram-downloader",
+  "description": "Instagram downloader bot for Bale messenger with a full MySQL-backed admin panel (PHP 8, no dependencies).",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1",
+    "ext-pdo": "*",
+    "ext-pdo_mysql": "*",
+    "ext-curl": "*",
+    "ext-openssl": "*",
+    "ext-mbstring": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/helpers.php"
+    ]
+  },
+  "scripts": {
+    "lint": "find app public cli -name '*.php' -print0 | xargs -0 -n1 php -l",
+    "test": "php tests/integration.php /tmp/mock.jsonl",
+    "serve": "php -S 0.0.0.0:8080 -t public"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}
