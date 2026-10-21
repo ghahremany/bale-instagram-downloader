@@ -426,6 +426,25 @@ BASE=http://127.0.0.1:8080 ./tests/smoke.sh
 
 ---
 
+## انتشار روی گیت‌هاب
+
+```bash
+# ۱) یک مخزن خالی بسازید (بدون README) سپس:
+git remote add origin https://github.com/USERNAME/bale-instagram-downloader.git
+git branch -M main
+git push -u origin main
+
+# یا با GitHub CLI:
+gh repo create bale-instagram-downloader --public --source=. --remote=origin --push
+```
+
+پیشنهادها برای صفحه مخزن:
+
+- **Description**: `Instagram downloader bot for Bale messenger — PHP 8 + MySQL admin panel with OTP login`
+- **Topics**: `bale` `balebot` `instagram` `instagram-downloader` `php` `mysql` `bot` `admin-panel` `persian` `rtl`
+- فایل `LICENSE` (MIT)، `SECURITY.md` و `CONTRIBUTING.md` از قبل آماده‌اند.
+- در تنظیمات مخزن → *Secrets and variables → Actions* چیزی لازم نیست؛ CI خودش MySQL را بالا می‌آورد.
+
 ## مجوز
 
 [MIT](LICENSE) — استفاده تجاری آزاد است؛ لطفاً اشاره به منبع کنید.
