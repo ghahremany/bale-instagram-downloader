@@ -1,5 +1,11 @@
 # 🤖 Bale Instagram Downloader — ربات دانلودر اینستاگرام بله
 
+[![CI](https://github.com/ghahremany/bale-instagram-downloader/actions/workflows/ci.yml/badge.svg)](https://github.com/ghahremany/bale-instagram-downloader/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PHP](https://img.shields.io/badge/PHP-8.1%2B-777bb3.svg)](https://www.php.net/)
+[![MySQL](https://img.shields.io/badge/MySQL-5.7%2B%20%7C%20MariaDB%2010.3%2B-00758f.svg)](https://www.mysql.com/)
+[![No dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](composer.json)
+
 <div dir="rtl">
 
 ربات دانلودر اینستاگرام برای پیام‌رسان **بله** + **پنل مدیریت حرفه‌ای**، نوشته‌شده با **PHP 8** و **MySQL**.
@@ -432,10 +438,10 @@ BASE=http://127.0.0.1:8080 ./tests/smoke.sh
 # ۱) یک مخزن خالی بسازید (بدون README) سپس:
 git remote add origin https://github.com/ghahremany/bale-instagram-downloader.git
 git branch -M main
-git push -u origin main
+git push -u mine main
 
 # یا با GitHub CLI:
-gh repo create bale-instagram-downloader --public --source=. --remote=origin --push
+gh repo create bale-instagram-downloader --public --source=. --remote=mine --push
 ```
 
 پیشنهادها برای صفحه مخزن:
