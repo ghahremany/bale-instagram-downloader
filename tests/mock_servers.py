@@ -43,9 +43,10 @@ class BaleHandler(BaseHTTPRequestHandler):
         ctype = self.headers.get("Content-Type", "")
         if "application/json" in ctype:
             try:
-                return json.loads(raw or b"{}")
+                parsed = json.loads(raw or b"{}")
             except json.JSONDecodeError:
                 return {}
+            return parsed if isinstance(parsed, dict) else {}
         params = {}
         if "multipart/form-data" in ctype:
             # keep just the field names and payload sizes
@@ -73,6 +74,8 @@ class BaleHandler(BaseHTTPRequestHandler):
             return
         method = match.group(2)
         params = self._read_body()
+        if not isinstance(params, dict):
+            params = {}
         log({"kind": "bale", "method": method, "params": {k: v for k, v in params.items() if k != "token"}})
 
         self.send_response(200)
