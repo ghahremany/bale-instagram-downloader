@@ -106,7 +106,7 @@
 ### ۱) آپلود پروژه
 
 ```bash
-git clone https://github.com/USERNAME/bale-instagram-downloader.git
+git clone https://github.com/ghahremany/bale-instagram-downloader.git
 cd bale-instagram-downloader
 # DocumentRoot را روی پوشه public/ تنظیم کنید
 ```
@@ -430,7 +430,7 @@ BASE=http://127.0.0.1:8080 ./tests/smoke.sh
 
 ```bash
 # ۱) یک مخزن خالی بسازید (بدون README) سپس:
-git remote add origin https://github.com/USERNAME/bale-instagram-downloader.git
+git remote add origin https://github.com/ghahremany/bale-instagram-downloader.git
 git branch -M main
 git push -u origin main
 

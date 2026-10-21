@@ -23,7 +23,7 @@ php -m | grep -E 'pdo_mysql|curl|openssl|mbstring|json'
 ```bash
 sudo mkdir -p /var/www
 cd /var/www
-sudo git clone https://github.com/USERNAME/bale-instagram-downloader.git
+sudo git clone https://github.com/ghahremany/bale-instagram-downloader.git
 sudo chown -R www-data:www-data bale-instagram-downloader
 cd bale-instagram-downloader
 ```
